@@ -21,5 +21,6 @@ from weatherproject.views import *
 
 urlpatterns = [
     path("about/",about),
-    path('', include('weatherapp.urls') ),
+    path("contact/",contact),
+    path('', include('weatherapp.urls')),
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
